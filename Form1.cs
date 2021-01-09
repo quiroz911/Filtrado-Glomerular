@@ -29,7 +29,20 @@ namespace Filtrado_Glomerular
 
         private void calcularButton_Click(object sender, EventArgs e)
         {
-            resultadoTxt.Text = edadTxt.Text + pesoTxt.Text;
+            int dceResultado;
+            if(sexoHombreRadioButton.Checked == true)
+            {
+                dceResultado = int.Parse(edadTxt.Text) * 3;
+            }
+            else
+            {
+                dceResultado = int.Parse(edadTxt.Text) * 2;
+            }
+            resultadoTxt.Text = dceResultado.ToString();
+            if(razaNegraCheckBox.Checked == true)
+            {
+                resultadoTxt.Text = resultadoTxt.Text + "n";
+            }
         }
 
         private void limpiarButton_Click(object sender, EventArgs e)

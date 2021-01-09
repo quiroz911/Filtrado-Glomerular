@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Filtrado Glomerular\\Filtrado Glomerular\\Filtrado Glomerular.csproj",
-      "projectName": "Filtrado Glomerular",
-      "projectPath": "D:\\Filtrado Glomerular\\Filtrado Glomerular\\Filtrado Glomerular.csproj",
+      "projectUniqueName": "D:\\Filtrado Glomerular\\Filtrado Glomerular\\FiltradoGlomerular.csproj",
+      "projectName": "FiltradoGlomerular",
+      "projectPath": "D:\\Filtrado Glomerular\\Filtrado Glomerular\\FiltradoGlomerular.csproj",
       "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
       "outputPath": "D:\\Filtrado Glomerular\\Filtrado Glomerular\\obj\\",
       "projectStyle": "PackageReference",

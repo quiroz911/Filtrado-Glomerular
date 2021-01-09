@@ -6,6 +6,7 @@
     <RootNamespace>Filtrado_Glomerular</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>kit-de-primeros-auxilios.ico</ApplicationIcon>
+    <StartupObject>Filtrado_Glomerular.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
