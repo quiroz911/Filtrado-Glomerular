@@ -43,13 +43,13 @@ namespace Filtrado_Glomerular
             {
                 k = 0.9;
                 alpha = -0.411;
-                dceResultado = 141 * Math.Pow((minimo(scr / k, 1)), alpha) * Math.Pow(maximo(scr / k,1),-1.209) * Math.Pow(0.993, edad);
+                dceResultado = 141 * Math.Pow((minimo(scr / k, 1)), alpha) * Math.Pow(maximo(scr / k, 1), -1.209) * Math.Pow(0.993, edad);
             }
             else
             {
                 k = 0.7;
                 alpha = -0.329;
-                dceResultado = 141 * Math.Pow((minimo(scr / k, 1)), alpha) * Math.Pow(maximo(scr / k, 1),-1.209) * Math.Pow(0.993, edad)*1.018; 
+                dceResultado = 141 * Math.Pow((minimo(scr / k, 1)), alpha) * Math.Pow(maximo(scr / k, 1), -1.209) * Math.Pow(0.993, edad) * 1.018;
             }
             if (razaNegraCheckBox.Checked == true)
             {
@@ -64,15 +64,15 @@ namespace Filtrado_Glomerular
             {
                 estadio = "Estadío 2";
             }
-            if(dceResultado>45 && dceResultado<= 60)
+            if (dceResultado > 45 && dceResultado <= 60)
             {
                 estadio = "Estadío 3A";
             }
-            if(dceResultado>30 && dceResultado<= 45)
+            if (dceResultado > 30 && dceResultado <= 45)
             {
                 estadio = "Estadío 3B";
             }
-            if(dceResultado>=15 && dceResultado<= 30)
+            if (dceResultado >= 15 && dceResultado <= 30)
             {
                 estadio = "Estadío 4";
             }
@@ -82,17 +82,21 @@ namespace Filtrado_Glomerular
             }
 
 
-            if(relacioAC > 300)
+            if (relacioAC > 300)
             {
                 kDigo = "A3 KDIGO";
             }
-            if(relacioAC>=30 && relacioAC <= 300)
+            if (relacioAC >= 30 && relacioAC <= 300)
             {
                 kDigo = "A2 KDIGO";
             }
-            if (relacioAC < 30)
+            if (relacioAC < 30 && relacioAC > 0)
             {
                 kDigo = "A1 KDIGO";
+            } 
+            if(relacioAC == 0)
+            {
+                kDigo = "Sin reporte de micro albuminuria";
             }
 
             dceResultado = Math.Round(dceResultado, 2);
