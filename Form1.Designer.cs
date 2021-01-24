@@ -45,6 +45,8 @@ namespace Filtrado_Glomerular
             this.calcularButton = new System.Windows.Forms.Button();
             this.limpiarButton = new System.Windows.Forms.Button();
             this.resultadoTxt = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.copiarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -169,7 +171,7 @@ namespace Filtrado_Glomerular
             // limpiarButton
             // 
             this.limpiarButton.ForeColor = System.Drawing.Color.Red;
-            this.limpiarButton.Location = new System.Drawing.Point(231, 352);
+            this.limpiarButton.Location = new System.Drawing.Point(231, 335);
             this.limpiarButton.Name = "limpiarButton";
             this.limpiarButton.Size = new System.Drawing.Size(75, 23);
             this.limpiarButton.TabIndex = 13;
@@ -185,11 +187,33 @@ namespace Filtrado_Glomerular
             this.resultadoTxt.Size = new System.Drawing.Size(452, 23);
             this.resultadoTxt.TabIndex = 14;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(295, 183);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(195, 15);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Utilice la coma para los decimales :)";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // copiarButton
+            // 
+            this.copiarButton.Location = new System.Drawing.Point(231, 364);
+            this.copiarButton.Name = "copiarButton";
+            this.copiarButton.Size = new System.Drawing.Size(75, 23);
+            this.copiarButton.TabIndex = 16;
+            this.copiarButton.Text = "Copiar";
+            this.copiarButton.UseVisualStyleBackColor = true;
+            this.copiarButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 476);
+            this.Controls.Add(this.copiarButton);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.resultadoTxt);
             this.Controls.Add(this.limpiarButton);
             this.Controls.Add(this.calcularButton);
@@ -232,6 +256,8 @@ namespace Filtrado_Glomerular
         private System.Windows.Forms.Button limpiarButton;
         private System.Windows.Forms.CheckBox razaNegraCheckBox;
         private System.Windows.Forms.TextBox resultadoTxt;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button copiarButton;
     }
 }
 
